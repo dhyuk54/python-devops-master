@@ -2,8 +2,10 @@ from app import app
 
 
 def test1():
+    print("start test")
     response = app.test_client().get('/')
     assert response.status_code == 200
+    print("end test")
 
 
 def test2():
